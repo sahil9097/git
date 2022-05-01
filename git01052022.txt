@@ -1,0 +1,50 @@
+Create a folder -> go inside the folder -> right click and open git bash
+
+1) git init  -> start your git repository
+
+2) git config --global user.name "akshat"    (only once it is required)
+
+3) git config --global user.email "akshu20791@gmail.com"    (only once it is required)
+
+4) git config --list (to check global configuration)
+
+5) touch file1   (create a empty file in the folder)
+
+6) git status   (you will see that the file is there is red color and msg coming that it is not ttracked)
+
+7) git add .  (put all the files in the staging area)  (to put particular file in staging area  -> git add <<filename>> )
+
+8) git status   (now the file is in staging area and waiting to be commited)
+
+9) cat >> file1
+hello world
+
+press ctrl + D to exit
+
+10) git status (you will see modified file1 )
+
+11) git add . (to put the file in staging area) 
+
+12) git commit -m "my first commit"      (putting the files from the staging area to the local repo) 
+
+###################SKIP STAGING AREA #############################
+
+13) touch testfile
+
+14) git add testfile
+
+15) git status
+
+16) cat >> testfile
+hello world
+
+press ctrl + D to exit
+
+17) git status   (you will see that testfile is modified)
+
+18) git commit -a -m "second commit learning skip staging area" 
+
+19) git status  (you will see that modified file is now gone and the modified test file has skipped staging area and moved to the local repo)
+
+##############################################################################
+
