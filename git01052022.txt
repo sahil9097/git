@@ -90,15 +90,41 @@ ctrl + D
 
 ################################################################################
 
-###########REMOVE A FILE FROM THE STAGING AREA #############################
+########### UNSTAGE A FILE  #############################
 
 
+31) touch file10
+
+32) git add file10
+
+33) git status
+
+34) git rm --cached file10   (this will unstage your file10  - first method)
+
+35) git status
+
+36) git add file10
+
+37) git restore --staged file10   (this will unstage your file10 - second method)
+
+38) git status
+
+#######################################################################################
+
+################# FINDING THE COMMIT (TO SEE ALL THE COMMITS DONE ) ################################
 
 
+39) git commit -m "fifth commit"
 
+40) git log   (complete list of commit (versions) which you have created)
 
+41) git log --oneline (it will give you the brief of the commit you have created)
 
+42) git log --graph --all  (it will give you the commits as a graph (generally we use it in branching))
 
+43) git log --oneline --graph --all  (it will give you commit as a graph (only commit messages and graph))
+
+################################################################
 
 
 
