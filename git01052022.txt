@@ -48,3 +48,112 @@ press ctrl + D to exit
 
 ##############################################################################
 
+####IF YOU WANT THE CHANGES YOU HAVE MADE IN THE FILE ################
+
+20) touch file3
+
+21) cat >> file3
+hello world
+
+ctrl + D to exit
+
+22) git add .  
+
+23) cat >> file3
+edureka 
+
+ctrl + D 
+
+24) git diff     (difference between your previous file and modified file. If you want to know exactly what you changed but not which files were changes)
+
+(you will see that edureka is added up ) 
+
+#######################################################################################
+
+
+###########REMOVING THE FILES IN GIT ################################
+
+
+25) touch file6
+
+
+26) git add file6
+
+27) you can delete the file6 from folder  or (rm -f filename) 
+
+28) git status  (you will see that file 6 is deleted)
+
+29) git add .   (this will update my staging area)
+
+30) git status   ( file6 is now deleted) 
+
+
+################################################################################
+
+###########REMOVE A FILE FROM THE STAGING AREA #############################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
