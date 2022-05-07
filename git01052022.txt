@@ -125,7 +125,101 @@ ctrl + D
 43) git log --oneline --graph --all  (it will give you commit as a graph (only commit messages and graph))
 
 ################################################################
+##################################### ALIAS ################################
 
+# lets say i am frequently using git status but using it again is taking some . now rather then that i will set an alias for git status ...where in 
+if i type git akshat in that case also git status will be exectuted
+
+
+44) git config --global alias.akshat status    (it will set the alias akshat where it you type git akshat then it will work same as git status)
+
+45) git akshat   (it will give us the status of the file)
+
+46) git config --global --unset alias.akshat   (it will unset the alias akshat)
+
+
+47) git config --get-regexp alias    (use to list alias) 
+
+
+
+############################################################################################
+
+
+#################  WORKING WITH GITHUB.COM #######################################################
+
+go to github.com 
+
+if you are new to github.com signup otherwise signin
+
+signup -> put your email id , password and username and signup 
+
+now you will enter the homapage of github.com
+
+
+#####################################################################################################
+
+
+################## CONNECT OUR LOCAL REPOSITORY WITH GITHUB.COM REPO ##########################
+
+48) Create a blank public repository in github
+
+49) git log --oneline    (shows me the commit messages)
+
+50) git remote add origin -u <<central git url>>  ( it will connect your git with the git hub repo url)
+
+51) git push -u origin master  (push the code into the git hub repo from my git repo )
+
+(try it once or twice if you are still getting the error then search windows credentials and delete the git credentials from there)
+
+52) now the pop will come which will ask for token
+
+go to github.com -> Click on the top right corner -> settings -> developer settings -> generate the new token  (select repo (tick) ) 
+
+copy paste the token in the pop up which comes up 
+
+
+##############################################################################################################
+
+
+############################################ IGNORING FILES ######################
+
+
+#you are working on a project. and you want to ignore a file(user.log) which gets updated regularly. 
+for that create .gitignore file and put the user.log in that particular file
+
+
+53) touch user.log
+
+54) cat > .gitignore  (press enter)
+user.log      (press enter)
+
+press ctrl + D to exit
+
+55) cat .gitignore 
+
+56) git status 
+
+(you will not see user.log because it has stopped tracking as we have put it in .gitignore)
+
+
+57) git add .
+
+58) git commit -m "gitignore file created"
+
+
+################### IF WE WANT TO IGNORE THE FILES WHICH ARE GETTING CREATED REGULARLY ######################
+
+
+#lets say for example if there users log files are created regularly....akshat.log , rahul.log , james.log , aman.log , sunday.log , ramakrishna.log
+...................................
+
+59) touch akshat.log aman.log rahul.log raghav.log anusha.log anamika.log yash.log 
+
+60) git status 
+
+61) go to .gitignore file and put *.log 
+
+62) git status   (you will see that all the files created in sno 59 is ignored now) 
 
 
 
